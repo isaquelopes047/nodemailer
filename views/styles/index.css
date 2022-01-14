@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&family=Roboto,wght@1,600&display=swap');
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1{
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(59, 59, 59);
+}
+
+.Presult{
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(59, 59, 59); 
+}
+
+.containerAll{
+  width: 70vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  margin: 5vh auto;
+}
+
+/* container Img */
+.containerImg{
+  width: 50vw;
+  height: 70vh;
+  background-image: url("../img/fundo.png");
+  background-size: 100%;
+  background-size: cover;
+}
+
+/* container Form */
+.containerForm{
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.containerInput{
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.containerInput input{
+  width: 90%;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  background-color: #e9841071;
+  outline: none;
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+.containerPimg{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  height: auto;
+}
+.containerInput label{
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+/* Button */
+.containerInputButton{
+  width: 95%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+.containerInputButton input{
+  width: 130px;
+  height: 30px;
+  border: none;
+  background-color: #E77855;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Loader */
+.containerLoader{
+  width: 100vw;
+  height: 80vh;
+  background-color: transparent;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .containerLoader p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    font-style: oblique;
+    color: #494949;
+  }
+.centerLoader{
+  width: 25vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.849);
+  margin: 0 auto;
+  border: 2px solid #dfdfdf;
+}
+.c-loader {
+  animation: is-rotating 1s infinite;
+  border: 12px solid #e5e5e5;
+  border-radius: 50%;
+  border-top-color: #ffc400;
+  height: 90px;
+  width: 90px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Erro */
+.containerErroAll{
+  width: 100vw;
+  height: 70px;
+  margin: 0px auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.erroContainer{
+  width: auto;
+  height: auto;
+  padding: 5px 15px;
+  padding-right: 80px;
+  background-color: rgb(255, 0, 0);
+  animation: erroLoad 0.5s ease;
+  position: absolute;
+}
+.erroContainer img{
+  margin:10px 10px 0 0;
+}
+@keyframes erroLoad{
+  0%{
+    transform: translateX(0px);
+  }
+  50%{
+    transform: translateX(-150px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+.msgErro{
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  float: right;
+}

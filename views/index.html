@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Send Email</title>
+    <link href="styles/index.css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <div class="containerErroAll">
+      <div class="erroContainer">
+        <img src="./img/erro.png" alt="">
+        <p class="msgErro"></p>
+      </div>
+    </div>
+
+    <div class="containerLoader">
+      <div class="centerLoader">
+        <p>Enviando...</p>
+        <div class="c-loader"></div>
+      </div>
+    </div>
+
+    <div class="containerAll">
+      <div class="containerImg"></div>
+
+      <div class="containerForm">
+        <form action="http://localhost:8080/sendmail" method="POST"
+          name="formulario">
+          <h1>Send <i>Email</i></h1>
+          <p class="Presult">Digite os dados e o email vai ser direcionado
+            automaticamente.</p>
+          <div class="containerInput">
+            <section>
+              <div class="containerPimg">
+                <img src="./img/email.png" alt="">
+                <label for="">Email do posto</label>
+              </div>
+              <input
+                name="to"
+                class="email"
+                type="email"
+                />
+            </section>
+          </div>
+
+          <div class="containerInput">
+            <div class="containerPimg">
+              <img src="./img/user.png" alt="">
+              <label for=""> Nome do motorista</label>
+            </div>
+            <section>
+              <input
+                type="text"
+                class="Nome"
+                name="Nome"
+                />
+            </section>
+          </div>
+
+          <div class="containerInput">
+            <div class="containerPimg">
+              <img src="./img/caminhao.png" alt="">
+              <label for="">Frota</label>
+            </div>
+            <section>
+              <input
+                type="text"
+                class="Frota"
+                name="frota"
+                />
+            </section>
+          </div>
+
+          <div class="containerInputButton">
+            <section>
+              <input
+                type="submit"
+                value="Enviar"
+                class="enviar"
+                onclick="return btnClick();"
+                />
+            </section>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script src="./JS/msg.js"></script>
+  <script src="./JS/valideForm.js"></script>
+</html>
